@@ -5,7 +5,7 @@ FROM nginx:latest
 COPY index.html /usr/share/nginx/html/index.html
 
 # Step 3: Copy the Nginx configuration file
-COPY nginx/default.conf /etc/nginx/conf.d/default.conf
+COPY default.conf /etc/nginx/conf.d/default.conf
 
 # Step 4: Expose port 80
 EXPOSE 80
